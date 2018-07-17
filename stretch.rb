@@ -1,9 +1,11 @@
+#defining variables
 documentary = "Into the Jungle"
 drama = "Love and Stuff"
 comedy = "Funny Life"
 dramedy = "Funny Love"
 book = "\"10000 Leagues Under the Sea\""
 
+#extracting input
 puts "Rate your opinion on documentaries from 1 to 5."
 docu_answer = gets.chomp.to_i
 puts "Rate your opinion on dramas from 1 to 5?"
@@ -11,6 +13,7 @@ drama_answer = gets.chomp.to_i
 puts "Rate your opinion on comedies from 1 to 5?"
 come_answer = gets.chomp.to_i
 
+#compiling data
 if docu_answer >= 4 && come_answer <= 3 && drama_answer <= 3
   puts "I recommend #{documentary}."
 elsif docu_answer <= 3 && come_answer <= 3 && drama_answer >= 4
